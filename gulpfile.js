@@ -56,4 +56,4 @@ function js(cb){
 
 
   
-  exports.default = series(css,html, watcher,server, fonts);
+  exports.default = series(css,html, watcher,server, fonts, js);
