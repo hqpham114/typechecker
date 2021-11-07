@@ -53,11 +53,10 @@ function js(cb){
     cb();
   }
   
-
-  function deploy(cb){
-    ghpages.publish('dist');
-
+  function deploy (cb){
+    ghpages.publish('dist')
+    cb();
   }
 
   
-  exports.default = series(css,html, watcher,server, fonts, js);
+  exports.default = series(css,html, watcher,server, fonts, js, deploy);
