@@ -5,6 +5,7 @@ const {  series, src, dest, watch} = require('gulp');
 //bowser refesh
 var browserSync = require('browser-sync').create();
 
+var ghpages = require('gh-pages');
 
 
 function html(cb){
@@ -53,7 +54,10 @@ function js(cb){
   }
   
 
+  function deploy(cb){
+    ghpages.publish('dist');
 
+  }
 
   
   exports.default = series(css,html, watcher,server, fonts, js);
