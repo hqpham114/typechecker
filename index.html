@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typechecker</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="options">
+    <h1>
+      Type Checker
+    </h1>
+    
+    <div class="option">
+      <label>Your text</label>
+      <input type="text" name="sentence" placeholder="The quick brown fox...">
+    </div>
+
+    <div class="option >
+      <label for="font-family" >Typeface</label>
+      <select name="font-family">
+    
+        <option value="Mohave">Mohave</option>
+        <option value="Poppins">Poppins</option>
+        <option value="Red Hat Mono">Red Hat Mono</option>
+        <option value="Faune">Faune</option>
+
+     
+      </select>
+  </div>
+
+    <div class="option">
+      <label for='typesize'>Type size
+        <span class='typesize-output'>64px</span>
+      </label>
+      <input type="range" name="typesize" min='12' max='200' value='64'>
+    </div>
+
+    <div class="option">
+      <label for='fontweight'>Font weight
+        <span>400</span>
+      </label>
+      <input type="range" name="fontweight" min='100' max='900' value='400'>
+    </div>
+
+
+    <div class="option">
+      <label for='leading'>Leading
+        <span class='leading-output'>1.5</span>
+      </label>
+      <input type="range" name="leading" min='0.75' max='2.5' value='1.5' step="0.25">
+    </div>
+    
+   
+    <div class="option italic">
+      <label for="italic"> Italic</label>
+    <input type="checkbox" name="italic">
+  
+    </div>
+
+
+    <div class="option">
+      <label> Colors</label>
+      <div class='colors'>
+<div class='black circle selectColor' data-color = "white" data-backgroundcolor = "">
+  a
+</div>
+
+<div class='white circle' data-color = "black" data-backgroundcolor = "white">
+  a
+</div>
+
+<div class='green circle' data-color = "black" data-backgroundcolor = "green">
+  a
+</div>
+
+<div class='pink circle' data-color = "white" data-backgroundcolor = "#ff1493">
+  a
+</div>
+</div>
+    </div>
+
+
+
+  </section>
+  
+  <textarea class="output">The quick brown fox jumps over the lazy dog</textarea>
+  
+  <script src="js/typechecker.js"></script>
+</body>
+</html>
